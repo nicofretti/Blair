@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/electric_core3.png-a90a592fd4e1f23679096b3144de3326.stex"
+path="res://.import/electric_core1.png-814b874a7f7801bc86e55eca17d1e245.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Eletric/electric_core3.png"
-dest_files=[ "res://.import/electric_core3.png-a90a592fd4e1f23679096b3144de3326.stex" ]
+source_file="res://Assets/Eletric/electric_core1.png"
+dest_files=[ "res://.import/electric_core1.png-814b874a7f7801bc86e55eca17d1e245.stex" ]
 
 [params]
 
