@@ -1,0 +1,34 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Components/Player/Core/CorePlayer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Player/Eletric/electric_core3.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Player/Eletric/electric_core1.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Player/Eletric/electric_core4.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Player/Eletric/electric_core2.png" type="Texture" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 8.12188
+
+[node name="ElectricCorePlayer" instance=ExtResource( 1 )]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="1"]
+rotation = -1.5708
+frames = SubResource( 1 )
+animation = "idle"
+playing = true
+
+[node name="CollisionShape" type="CollisionShape2D" parent="." index="2"]
+shape = SubResource( 2 )
